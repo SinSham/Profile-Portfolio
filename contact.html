@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .heading{
+            display: block;
+            margin-top: 90px;
+            margin-bottom: 30px;
+            padding: 15px;
+            font-size: 55px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 55px 60px; 
+            background-color: rgb(237, 237, 237);
+            border-radius: 6px;
+            margin-bottom: 30px;
+            margin-top:10px;
+            border: 2px solid black;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            border: 2px solid black;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-space button{
+            margin:auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding:10px 12px;
+            border-radius: 2px;
+            font-weight: bold;
+            background-color:pink;
+            box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .form-space button:hover{
+            background-color:rgb(251, 169, 183);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="heading">Let's Connect!</div>
+    <div class="form-space">
+        <form>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" required placeholder="Name*" autocomplete="name">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" required placeholder="Email*" autocomplete="email">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required placeholder="Subject*" autocomplete="text">
+            <label for="message">Your message:</label>
+            <textarea id="message" placeholder="Your message*" autocomplete="text" style="width: 382px; height: 120px;"></textarea>
+            
+            <button>Send Message</button>
+        </form>
+    </div>
+
+
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        .heading h1{
+            text-align: center;
+            font-size: 54px;
+            font-weight: lighter;
+            padding-top: 100px;
+        }
+
+        .container{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .container-1:hover{
+            transform: translateY(-4px);
+        }
+
+        .container-1{
+            border: 2px solid black;
+            border-radius: 0.2cm;
+            margin: 60px 20px;
+            padding: 40px 50px;
+            width: 380px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .title{
+            font-size: 24px;
+            font-weight: lighter;
+            margin: 20px;
+        }
+
+        .brief{
+            color: rgb(96, 96, 96);
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .pic img{
+            width:100px;
+            height: auto;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+   
+    <div class="heading">
+        <h1>About Me</h1>
+    </div>
+
+    <div class="container">
+        <div class="container-1">
+            <div class="pic"><img src="university.png"></div>
+            <div class="title">Undergrad at TIET Patiala</div>
+        
+            <div class="brief" style="text-align: justify;">I am a 3rd year student at Thapar Institute of Engineering and Technology, Patiala.</div>
+            
+            <div class="title">What I study:</div>
+            <div class="brief">Computer Science Engineering</div>
+            
+            <div class="title">Things I do:</div>
+            <div class="brief">Developing</div>
+            <div class="brief">Coding</div>
+            <div class="brief">Projects</div>
+            <div class="brief">Contests</div>
+                
+        </div>
+
+        <div class="container-1">
+            <div class="pic"><img src="machine.png"></div>
+            <div class="title">Data Scientist</div>
+        
+            <div class="brief" style="text-align: justify;">I am a data scientist skilled in analyzing and understanding complex data sets.</div>
+            
+            <div class="title">Technologies I use:</div>
+            <div class="brief">Python, R, PL/SQL</div>
+            
+            <div class="title">Dev Tools:</div>
+            <div class="brief">Google Colab</div>
+            <div class="brief">Git</div>
+            <div class="brief">Github</div>
+            <div class="brief">VSCode</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="navbar.js"></script>
+</body>
+</html>
